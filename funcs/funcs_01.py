@@ -5,7 +5,7 @@
 
 
 
-def my_func(name):
+def my_func(name: str):
 
     print(f'Hello {name}')
 
