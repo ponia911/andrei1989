@@ -2,7 +2,7 @@
 # выполнения функции
 from datetime import datetime
 time = datetime.now()
-
+#from  import datetime
 
 
 def my_decoratore(func):
@@ -15,3 +15,14 @@ def my_decoratore(func):
         print(delta)
         return result
     return ineer
+
+@my_decoratore
+
+def very_importent_func(arr):
+    from time import sleep
+    arr = list(map(lambda x: x * 2, arr))
+    print(arr)
+    return arr
+
+def main():
+    arr = [i for i in range(100)]
