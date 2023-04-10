@@ -5,8 +5,8 @@
 
 def factoria(n: int) -> int:
     result = 1
-    for i in range(1, n * 1):
-        result *= i
+    for i in range(1, n + 1):
+        result *= i #result = result * i
     return result
 
 
